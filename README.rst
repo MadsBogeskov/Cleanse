@@ -244,7 +244,7 @@ And we'll want to make a module to configure it:
     }
   }
 
-(note: One can omit the `RootViewController.self` from the binding builder as it's not required, but we recommend you include it anyways to make it easier to discover where specific types are constructed in Cleanse.)
+(note: One can omit the ``RootViewController.self`` from the binding builder as it's not required, but we recommend you include it anyways to make it easier to discover where specific types are constructed in Cleanse.)
 
 and in our ``AppDelegate.Component.configure`` method we want to install this module by adding
 
@@ -698,7 +698,7 @@ but with the addition of one step: calling ``.intoCollection()`` in the builder 
     .intoCollection()	// indicates that we are providing an
                       // element or elements into Array<Element>**
    [.tagged(with: Tag_For_Element.self)]   // Tag step
-   [.asSingleton()]                        // Scope step
+   [.sharedInScope()]                      // Scope step
    {.to(provider:) |                       // Terminating step
     .to(factory:)  |
     .to(value:)}
