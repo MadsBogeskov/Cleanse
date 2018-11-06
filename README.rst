@@ -15,8 +15,6 @@ Cleanse - Swift Dependency Injection
 Cleanse is a `dependency injection`_ framework for Swift. It is designed from the ground-up with *developer experience*
 in mind. It takes inspiration from both `Dagger`_ and `Guice`_.
 
-Cleanse is currently in *beta* phase. This means its API is subject to change (but for the better).
-
 .. _dependency injection: https://en.wikipedia.org/wiki/Dependency_injection
 .. _Guice: https://github.com/google/guice
 .. _Dagger: http://google.github.io/dagger/
@@ -29,8 +27,11 @@ A full-fledged example of using Cleanse with Cocoa Touch can be found in ``Examp
 
 Installation
 ````````````
-Cleanse can be added to your project multiple ways. How to add it, depends on your environment (whether using Xcode
-or the open source toolchain) as well as what your preferred dependency management software.
+Using CocoaPods
+~~~~~~~~~~~~~~~
+You can pull in the latest Cleanse version into your ``Podfile`` by:
+``pod `Cleanse```
+
 
 Using Xcode
 ~~~~~~~~~~~
